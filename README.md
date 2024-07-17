@@ -66,16 +66,16 @@ xなどSNSで発信
  * 場所をマップ上に表示する(Google Maps API使用予定)
 
 ■ 機能の実装方針
-  sorcery
-  jsonapi-serializer
-  carrierwave
-  mini_magick
-React
-  axios
-  mui
-  react-router-dom
-  react-interactjs
-  react-tag-input
-  react-modal
-Heroku
-AWS(S3)
+ - sorcery
+ - jsonapi-serializer
+ - carrierwave
+ - mini_magick
+ - React
+ - axios
+ - mui
+ - react-router-dom
+ - react-interactjs
+ - react-tag-input
+ - react-modal
+ - Heroku
+ - AWS(S3)
