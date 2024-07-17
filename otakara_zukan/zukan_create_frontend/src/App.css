@@ -1,0 +1,564 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background-color: #fffac2;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+@font-face {
+  font-family: 'MochiyPopOne';
+  src: url('../public/MochiyPopOne-OTF-ExtraBold.otf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  width: 100%;
+}
+
+.button {
+  margin: 5px 10px ;
+  padding: 8px 10px;
+  background-color: #f9a980;
+  border-style: none;
+  border-radius: 0.2rem;
+  color: white;
+  font-family: 'MochiyPopOne';
+  cursor: pointer;
+  box-shadow: 0px 3px #cc7a00;
+}
+
+.button:active {
+  box-shadow: 0px 1px #cc7a00;
+  transform: translateY(2px);
+}
+
+.policy-button {
+  margin: 10px;
+}
+
+.top-wrapper {
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .top-wrapper {
+    height: auto;
+  }
+}
+
+.first-content {
+  background-image: url("../public/top.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-bottom:  calc(100%*630/1200);
+  position: relative;
+}
+
+.terms-link {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 2.5vw;
+}
+
+@media (max-width: 600px) {
+  .terms-link {
+    font-size: 13px;
+  }
+}
+
+.signup-button {
+  position: absolute;
+  right: 23%;
+  bottom: 30%;
+}
+
+.header {
+  background-color: #f9a980;
+}
+
+.top-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 5px;
+}
+
+.introduction {
+  margin-top: 10px;
+}
+
+.introduction-container {
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 2vw;
+}
+
+@media (max-width: 600px) {
+  .introduction-container{
+    display: inline;
+    font-size: 13px;
+  }
+}
+
+.introduction-content {
+  background-color: #fefbe6;
+  margin: 1vw;
+  flex: 1;
+}
+
+.introduction-content img{
+  width: 50%;
+  height: 50%;
+}
+
+@media (max-width: 600px) {
+  .introduction-content img {
+    width: 30%;
+    height: 50%;  
+  }
+}
+
+.introduction-content  button{
+  font-size: 2vw;
+  margin: 20px 0 10px 0;
+}
+
+.top-nav ul li {
+  display: inline;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.top-link {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5vw;
+}
+
+.explanation-content {
+  margin: 10px;
+}
+
+.explanation h3 {
+  margin-top: 10px;
+}
+
+.explanation img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+ul {
+  padding: 10px;
+  text-align: right;
+}
+
+ul li {
+  list-style: none;
+}
+
+.top-logo {
+  font-family: 'MochiyPopOne';
+  color: white;
+  margin: 0 0 0 10px;
+  padding: 10px;
+  font-size: 3vw;
+}
+
+.how_to_use {
+  background-color: white; 
+  width: 80vw;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.how_to_use p {
+  text-align: left;
+  margin-left: 20%;
+}
+
+.how_to_use img {
+  width: 70%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-form input {
+  margin: 20px;
+  padding: 5px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.login-form button {
+  margin: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #f9a980;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+h1 {
+  top: 0;
+  margin: 0 10px;
+  padding: 5px 0;
+  position: relative;
+  font-size: 23px;
+  font-family: 'MochiyPopOne';
+  border-bottom: 2px solid;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 30%;
+}
+
+.flash-message {
+  text-align: center;
+}
+
+.Sidebar{
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  background-color: #f9a980;
+  font-family: 'MochiyPopOne';
+  overflow: auto;
+}
+
+.SidebarList {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.SidebarList #active{
+  background-color: #f69679;
+}
+
+.SidebarList .row {
+  height: 60px;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.row {
+  list-style: none;
+  display: inline;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #f69679;
+}
+
+.row #icon {
+  flex: 15%;
+  display: grid;
+}
+
+.row #title {
+  flex: 70%;
+}
+
+.SidebarIcon {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.SidebarIcon img {
+  width: 100px;
+}
+
+.SidebarIcon p {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.search {
+  position: relative;
+  margin: 5px 10px;
+}
+
+.search input {
+  padding: 5px;
+  border-right: none;
+}
+
+.search button {
+  color: white;
+  padding: 3px;
+  background-color: #f9a980;
+  border-radius: 0 5px 5px 0;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-top: 3%;
+  margin-bottom: 50px;
+}
+
+.illustrated-book-card {
+  flex: 0 1 calc(25% - 52px);
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  .illustrated-book-card {
+    flex-basis: calc(50% - 52px);
+  }
+}
+
+@media (max-width: 600px) {
+  .illustrated-book-card {
+    flex-basis: calc(100% - 52px);
+  }
+}
+
+.illustrated-book-card p {
+  margin: 0;
+  padding: 5px;
+}
+
+.illustrated-book-card .title {
+  font-weight: bold;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*tag*/
+.tag {
+  color: #2980b9;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+
+.tabs button{
+  font-family: 'MochiyPopOne';
+  margin: 5px 10px;
+  position: relative;
+  height: 50px;
+  padding: 0 24px;
+  overflow: hidden;
+  font-size: 15px;
+  color: #222;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background: transparent;
+  border: none;
+}
+
+.tabs button:hover::after{
+	transform: scaleX(1);
+}
+
+.tabs button::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #f9a980;
+	transform: scaleX(0);
+	transition: transform 0.3s;
+}
+
+.tabs button.active::after{
+	transform: scaleX(1);
+}
+
+.card-actions {
+  display: flex;
+}
+
+.content-create {
+  position: relative;
+  overflow: auto;
+  margin: 0 10px;
+  width: 100%;
+  height: auto;
+}
+
+.content-create input {
+  width: 100%;
+  max-width: 430px;
+  height: 2rem;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.draggable-area {
+  background-color: white;
+  width: 100vw;
+  height: calc(100vw * (297 / 210));
+  max-width: 794px;
+  max-height: 1119px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+@media (orientation: landscape) {
+  .draggable-area {
+    width: calc(100vh * (210 / 297));
+    height: 100vh;
+  }
+}
+
+/*react-tags*/
+.ReactTags__suggestions {
+  display: flex;
+}
+
+.ReactTags__suggestions ul {
+  margin: 4px 1px;
+  padding: 0;
+  list-style: none;
+}
+
+.ReactTags__suggestions li mark {
+  text-decoration: underline;
+  background: none;
+  font-weight: 600;
+}
+
+.ReactTags__suggestions li:hover {
+  cursor: pointer;
+  background: #eee;
+}
+/*react-tags*/
+
+.screen-change {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.modal-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.field-card {
+  flex-basis: calc(25% - 10px);
+  margin-bottom: 10px;
+}
+
+.field-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.template-card {
+  flex-basis: calc(25% - 10px);
+  margin-bottom: 10px;
+}
+
+/*ファイル選択ダイアログ*/
+.file-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-container button {
+  max-width: 300px;
+}
+
+.file-label {
+  width: min(75vw, 730px);
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  color: #f9a980;
+  border: solid;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 3vw;
+  justify-content: center;
+}
+
+.file-label svg {
+  font-size: 3.5vw;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-icon {
+  font-size: 4vw;
+}
+
+.text-preview {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.preview-box {
+  position: relative;
+  width: 75%;
+}
+
+.text-preview-container {
+  border: 2px solid #778899;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 2vw;
+}
+
+.text-preview-container button {
+  position: absolute;
+  bottom: 0;
+  right: 0
+}
