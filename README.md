@@ -77,7 +77,7 @@ xなどSNSで発信
  - react-interactjs
  - react-tag-input
  - react-modal
- - Heroku
+ - Firebase
  - AWS(S3)
    
 ## その他
