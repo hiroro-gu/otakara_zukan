@@ -62,16 +62,10 @@ xなどSNSで発信
  * 投稿済み図鑑編集
  * 画像解析(画像からテキストを抽出、ワンタッチでテキストをコピー)
  * 検索にオートコンプリート機能追加
-
-### 本リリース後の追加予定
  * 画像加工
- * 画像内の人物にモザイク処理
- * 見つけた場所をマップ上に表示する(地図の公開、非公開選択)(Google Maps API使用予定)
- * ある生き物の図鑑作成をするとその生き物のアイコンを使用可能にする
-   * 使用可能アイコン一覧
+ * 場所をマップ上に表示する(Google Maps API使用予定)
 
 ■ 機能の実装方針
-RailsAPIモード
   sorcery
   jsonapi-serializer
   carrierwave
@@ -83,7 +77,5 @@ React
   react-interactjs
   react-tag-input
   react-modal
-  swiper
-Google Cloud Vision API(画像から日本語抽出)
 Heroku
 AWS(S3)
