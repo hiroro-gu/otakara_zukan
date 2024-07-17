@@ -79,3 +79,6 @@ xなどSNSで発信
  - react-modal
  - Heroku
  - AWS(S3)
+   
+## その他
+MVPをもっと軽くしてもいいならしたいところ
